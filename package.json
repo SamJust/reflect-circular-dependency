@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start:dev": "node -r ts-node/register index.ts",
+	"start:debug": "node dist/index.js",
     "build": "tsc -p tsconfig.json"
   }
 }

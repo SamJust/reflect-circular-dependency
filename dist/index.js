@@ -4,6 +4,8 @@ require("reflect-metadata");
 const Action_1 = require("./classes/Action");
 const User_1 = require("./classes/User");
 setTimeout(() => {
-    console.log(Reflect.getMetadata('design:types', User_1.User.prototype, 'action'));
-    console.log(Reflect.getMetadata('design:types', Action_1.Action.prototype, 'user'));
+    const action = new Action_1.Action();
+    const user = new User_1.User();
+    console.log(Reflect.getMetadata('design:type', action, 'user'));
+    console.log(Reflect.getMetadata('design:type', user, 'action'));
 });
